@@ -14,6 +14,19 @@ def zoe_brown():
     user_response = input('What did the fish say when he swam into a wall?')
     print('Dam')
 
+# Andy Hagen
+def decode(encoded_pass):
+    # Create an empty string assigned to a new variable to store the decoded password
+    decoded_password = ""
+
+    for i in range(0, len(encoded_pass)):
+        encoded_digit = int(encoded_pass[i]) - 3
+        decoded_password += str(encoded_digit)
+
+    # Return decoded password string
+    return decoded_password
+
+
 def main():
     name = input("What is your name?")
 
